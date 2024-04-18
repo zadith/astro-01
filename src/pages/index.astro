@@ -1,4 +1,8 @@
 ---
+
+import Footer  from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+
 const pageTitle = "Inicio";
 ---
 
@@ -11,10 +15,8 @@ const pageTitle = "Inicio";
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<a href="/">Inicio</a>
-		<a href="/about/">Sobre mi</a>
-		<a href="/blog/">Blog</a>
-
-		<h1>Astro tutorial</h1>
+		<Header />
+		<h1>{pageTitle}</h1>
+		<Footer />
 	</body>
 </html>
